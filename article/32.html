@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="//cdn.bootcss.com"/>
+    <link rel="dns-prefetch" href="//secure.gravatar.com"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <title>使用Github做一个完全免费的个人网站(步骤很细)-  Web- 天下长安长乐未央</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content="使用Github做一个完全免费的个人网站(步骤很细)..."/>
+    <script type="text/javascript">(function () { var event = document.addEventListener ? { add: 'addEventListener', triggers: ['scroll', 'mousemove', 'keyup', 'touchstart'], load: 'DOMContentLoaded' } : { add: 'attachEvent', triggers: ['onfocus', 'onmousemove', 'onkeyup', 'ontouchstart'], load: 'onload' }, added = false; document[event.add](event.load, function () { var r = document.getElementById('respond-post-32'), input = document.createElement('input'); input.type = 'hidden'; input.name = '_'; input.value = (function () { var _FWhdMh = '7d'+'Xr'+'5'+'31'+'54'+'7'+'ee4'+'b0c'+'40'+'7'+/* 'Em''a0'+'654'+'b'+'d3'+'75'+''+'SAu'+''+'e37'+'37', _ViJONV = [[2,4],[27,30]]; for (var i = 0; i < _ViJONV.length; i ++) { _FWhdMh = _FWhdMh.substring(0, _ViJONV[i][0]) + _FWhdMh.substring(_ViJONV[i][1]); } return _FWhdMh;})(); if (null != r) { var forms = r.getElementsByTagName('form'); if (forms.length > 0) { function append() { if (!added) { forms[0].appendChild(input); added = true; } } for (var i = 0; i < event.triggers.length; i ++) { var trigger = event.triggers[i]; document[event.add](trigger, append); window[event.add](trigger, append); } } } });})();</script>
+    <link href="//cdn.bootcss.com/highlight.js/9.10.0/styles/xcode.min.css" rel="stylesheet">
+    <link href="/static/pingsu/style.min.css?20230522" rel="stylesheet">
+    <!--[if lt IE 9]> <script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script> <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+</head>
+<body class="" gtools_scp_screen_capture_injected="true">
+    <!--[if lt IE 8]> <div class="browsehappy" role="dialog"> 当前网页 <strong>不支持</strong> 你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/" target="_blank">升级你的浏览器</a>。 </div> <![endif]-->
+
+    <header id="header" class="header bg-white">
+        <div class="navbar-container">
+            <a href="/" class="navbar-logo">
+                <img src="/static/pingsu/images/crossplane-icon.svg" alt="天下长安长乐未央"/> <img src="/static/pingsu/images/logo.png" alt="天下长安长乐未央"/>
+            </a>
+            <div class="navbar-menu">
+
+<a href="/list/Web/">Web</a>
+                <a href="/list/VPS/">VPS</a>
+                <a href="/list/Windows/">Windows</a>
+                <a href="/list/Android/">Android</a>
+                <a href="/list/iOS/">iOS</a>
+                <a href="/list/Mac/">Mac</a>
+                <a href="/list/PVE/">PVE</a>
+                <a href="/list/ESXI/">ESXI</a>
+                <a href="/list/OpenWrt/">OpenWrt</a>
+                <a href="/list/iKuai/"> iKuai</a>
+                <a href="/list/Synology/">Synology</a>
+                <a href="/list/QNAP/">QNAP</a>
+                <a href="/list/Docker/">Docker</a>
+                <a href="/Share/">Share</a>
+
+  
+ 
+
+            </div>
+
+
+<!--
+       <div class="navbar-search" onclick="">
+                <span class="icon-search"></span>
+                <form id="search" method="post" action="/" role="search">
+                    <span class="search-box">
+                        <input type="text" id="input" class="input" name="s" required="true" placeholder="Search..." maxlength="30" autocomplete="off">
+                    </span>
+                </form>
+            </div>
+-->
+
+
+            <div class="navbar-mobile-menu" onclick="">
+                <span class="icon-menu cross">
+                    <span class="middle"></span>
+                </span>
+                <ul>
+
+                    <li>
+                        <a class="current" href="/list/Web/">Web</a>
+                    </li>
+                    <li>
+                        <a href="/list/VPS/">VPS</a>
+                    </li>
+                    <li>
+                        <a href="/list/Windows/">Windows</a>
+                    </li>
+                    <li>
+                        <a href="/list/Android/">Android</a>
+                    </li>
+                    <li>
+                        <a href="/list/iOS/">iOS</a>
+                    </li>
+                    <li>
+                        <a href="/list/Mac/">Mac</a>
+                    </li>
+                    <li>
+                        <a href="/list/PVE/">PVE</a>
+                    </li>
+                    <li>
+                        <a href="/list/ESXI/">ESXI</a>
+                    </li>
+                    <li>
+                        <a href="/list/OpenWrt/">OpenWrt</a>
+                    </li>
+                    <li>
+                        <a href="/list/iKuai/"> iKuai</a>
+                    </li>
+                    <li>
+                        <a href="/list/Synology/">Synology</a>
+                    </li>
+                    <li>
+                        <a href="/list/QNAP/">QNAP</a>
+                    </li>
+                    <li>
+                        <a href="/list/Docker/">Docker</a>
+                    </li>
+                    <li>
+                        <a href="/list/VPN/">VPN</a>
+                    </li>
+                    <li>
+                        <a href="//Share/">Share</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="post-header-thumb bg-deepgrey">
+        <div class="post-header-thumb-op" style="background-image:url(/static/pingsu/images/7.jpg" alt=");"></div>
+        <div class="post-header-thumb-cover">
+            <div class="post-header-thumb-container">
+                <div class="post-header-thumb-title"> 使用Github做一个完全免费的个人网站(步骤很细)</div>
+                <div class="post-header-thumb-meta">
+                    <time datetime="2023-10-25T10:39:00+08:00" itemprop="datePublished">Published on 2023-11-04 22:10:13</time>
+                     in 
+                    <a href="/list/Web/">Web</a>
+          
+                     with 
+                    <a href="#comments"> 0 comment</a>
+                </div>
+                <div class="post-tags">
+                </div>
+            </div>
+        </div>
+    </div>
+    <article class="main-content post-page" itemscope itemtype="http://schema.org/Article">
+        <div class="post-header">
+            <h1 class="post-title" itemprop="name headline">使用Github做一个完全免费的个人网站(步骤很细) </h1>
+            <div class="post-data">
+                <time datetime="2023-10-25T10:39:00+08:00" itemprop="datePublished">Published on 2023-11-04 22:10:13</time>
+                 in 
+                    <a href="/list/Web/">Web</a>
+                 with 
+                <a href="#comments"> 0 comment</a>
+            </div>
+        </div>
+        <div id="post-content" class="post-content" itemprop="articleBody">
+            <p class="post-tags">
+            </p>
+
+            <div class="common-title">  您现在的位置是：<a href="/">首页</a>&nbsp;>&nbsp;<a href="/list/">网络生活</a>&nbsp;>&nbsp;<a href="/list/Web/">Web</a></div>
+
+            <p>使用Github做一个完全免费的个人网站(步骤很细)</p>
+            <p data-first-child="" data-pid="GWYvnTMC"><b>首先，我霸都傲天申明绝对是完全免费，不会在文章中推销什么云服务器，虚拟主机等。而且操作步骤上手简单，即使非IT人员也很容易实现。</b></p>
+<blockquote data-pid="zVDUL9Y1">局限：只能是静态网站的个人网站<br />面向读者：所有人包括非IT人员</blockquote>
+<p data-pid="S77oUCTy">首先如果你无法理解&ldquo;静态网站&rdquo;的话，那么相信我，静态网站就可以满足你大部分个人网站的需求。其次这篇文章更多的是面向非IT人员，因为我写这篇文章的原因是我的一个同学的故事：</p>
+<blockquote data-pid="7Pckx_hJ">我同学小A是律师，他想把自己处理过的一些案件记录在自己的个人博客中，他已经注册了公众号。但是他始终觉得有个网站或者个人博客会显得专业一些，而且还可以展示自己的个人履历，把这个网站链接放在公众号里面会显得跟专业一些。&ldquo;好吧，我明白了~&rdquo;</blockquote>
+<p data-pid="PjNOEG3t">而且学会自己搭建一个静态网站是一个很酷的事情，你可以做一些很漂亮的宣传页，或者表达自我主张的个人博客，或者在我以前的文章里面给别人做一个网页版生日祝福or纪念日等等。</p>
+<p data-pid="xeCkWfno">所以开始吧~</p>
+<h2><b>前言</b></h2>
+<p data-pid="MZUCWDLl">首先我们要用到的工具是著名的开源社区Github，我们做的静态网站最终要托管在上面，这个功能叫做&ldquo;Github Pages&rdquo;，是一项免费的静态文件部署服务。</p>
+<p data-pid="K5AlSpgq">虽然Github是国外的网站，但是在国内可以访问并且速度还不错！</p>
+<blockquote data-pid="SqNJUtKb">有人担心，如果以后Github被墙了怎么办？<br />放心，即使被墙了，你学会如下的操作依然可以在类似的国内平台，例如码云等</blockquote>
+<h2><b>1.申请Github账号</b></h2>
+<p data-pid="dVElYsuL">（如果有账号请直接登录然后跳转到教程下一步）</p>
+<p data-pid="TGZLEfWA">访问<a data-za-detail-view-id="1043" href="https://link.zhihu.com/?target=http%3A//github.com/" rel="nofollow noreferrer" target="_blank">Github</a>，点击SIGN UP按钮。（Sign in是登录的意思，应该都很好理解）还有Github是全英文的，没有中文的哦亲，但这不影响我们使用的。</p>
+<figure data-size="normal"><img data-actualsrc="https://pic2.zhimg.com/v2-8ea3f6182c6b5a788defb6866d02bda5_b.jpg" data-caption="" data-lazy-status="ok" data-original="https://pic2.zhimg.com/v2-8ea3f6182c6b5a788defb6866d02bda5_r.jpg" data-original-token="v2-8ea3f6182c6b5a788defb6866d02bda5" data-rawheight="116" data-rawwidth="422" data-size="normal" height="116" src="https://pic2.zhimg.com/80/v2-8ea3f6182c6b5a788defb6866d02bda5_1440w.webp" width="422" /></figure>
+<p data-pid="ICxw9_qq">注册很简单，只需要<b>用户名，密码，邮箱</b>即可，不需要手机号。（对了，用户名用一个酷一点或者有意义一点的，因为它会出现在你的网址中）</p>
+<figure data-size="normal"><img data-actualsrc="https://pic4.zhimg.com/v2-179e34784dc8c5ff533b292e1e769e37_b.jpg" data-lazy-status="ok" data-original="https://pic4.zhimg.com/v2-179e34784dc8c5ff533b292e1e769e37_r.jpg" data-original-token="v2-179e34784dc8c5ff533b292e1e769e37" data-rawheight="683" data-rawwidth="529" data-size="normal" height="683" src="https://pic4.zhimg.com/80/v2-179e34784dc8c5ff533b292e1e769e37_1440w.webp" width="529" />
+<figcaption>注册填写Github用户名密码邮箱</figcaption></figure>
+<p data-pid="iXQkAGbZ">接着，Github会问你是否需要付费使用。这里选择不用，因为Github提供的免费服务已经能满足大部分人包括开发者的需要了。付费服务主要是面向团队以及企业。</p>
+<figure data-size="normal"><img data-actualsrc="https://pic1.zhimg.com/v2-aaff284aa8c4aa00814925d06bc1f22c_b.jpg" data-caption="" data-lazy-status="ok" data-original="https://pic1.zhimg.com/v2-aaff284aa8c4aa00814925d06bc1f22c_r.jpg" data-original-token="v2-aaff284aa8c4aa00814925d06bc1f22c" data-rawheight="472" data-rawwidth="607" data-size="normal" height="472" src="https://pic1.zhimg.com/80/v2-aaff284aa8c4aa00814925d06bc1f22c_1440w.webp" width="607" /></figure>
+<p data-pid="J6CQZQXu">后面还会有一些步骤，大概意思就是问你想用Github做什么，你对Git的熟练程度，（感觉像是moba游戏新手调研都会这么做）因为Github网站迭代的原因可能会稍有不同。比如笔者这里试的时候是这样子的。</p>
+<figure data-size="normal"><img data-actualsrc="https://pic2.zhimg.com/v2-32525025334550b7bfd94ed1dfa72321_b.jpg" data-caption="" data-lazy-status="ok" data-original="https://pic2.zhimg.com/v2-32525025334550b7bfd94ed1dfa72321_r.jpg" data-original-token="v2-32525025334550b7bfd94ed1dfa72321" data-rawheight="214" data-rawwidth="499" data-size="normal" height="214" src="https://pic2.zhimg.com/80/v2-32525025334550b7bfd94ed1dfa72321_1440w.webp" width="499" /></figure>
+<figure data-size="normal"><img data-actualsrc="https://pic4.zhimg.com/v2-16f432408959b7f5a23d12d1557b2e4f_b.jpg" data-caption="" data-lazy-status="ok" data-original="https://pic4.zhimg.com/v2-16f432408959b7f5a23d12d1557b2e4f_r.jpg" data-original-token="v2-16f432408959b7f5a23d12d1557b2e4f" data-rawheight="503" data-rawwidth="515" data-size="normal" height="503" src="https://pic4.zhimg.com/80/v2-16f432408959b7f5a23d12d1557b2e4f_1440w.webp" width="515" /></figure>
+<figure data-size="normal"><img data-actualsrc="https://pic3.zhimg.com/v2-858e2681cd2e31cb3d82046ac104425e_b.jpg" data-caption="" data-lazy-status="ok" data-original="https://pic3.zhimg.com/v2-858e2681cd2e31cb3d82046ac104425e_r.jpg" data-original-token="v2-858e2681cd2e31cb3d82046ac104425e" data-rawheight="271" data-rawwidth="549" data-size="normal" height="271" src="https://pic3.zhimg.com/80/v2-858e2681cd2e31cb3d82046ac104425e_1440w.webp" width="549" /></figure>
+<p data-pid="7JKJ0pXm">然后Github会给你注册的邮箱发送一个确认链接，<b>请点击链接确认</b>，不激活的话是无法正常使用Github的服务的。这个是Github的反爬虫系统。（题外话：Github的反爬虫系统很强很强！）</p>
+<figure data-size="normal"><img data-actualsrc="https://pic1.zhimg.com/v2-11d62fe1b74bda59a8f3207aed552414_b.jpg" data-caption="" data-lazy-status="ok" data-original="https://pic1.zhimg.com/v2-11d62fe1b74bda59a8f3207aed552414_r.jpg" data-original-token="v2-11d62fe1b74bda59a8f3207aed552414" data-rawheight="81" data-rawwidth="852" data-size="normal" height="81" src="https://pic1.zhimg.com/80/v2-11d62fe1b74bda59a8f3207aed552414_1440w.webp" width="852" /></figure>
+<p data-pid="mYh-Ss2P">如果收件箱没有看到，那么不用想了，一定在垃圾箱里面！</p>
+<p data-pid="62k4gic5">到这里我们的注册就完成了。</p>
+<h2><b>2.创建一个仓库</b></h2>
+<p data-pid="boZ2pCvd">接下来我们要创建一个仓库，仓库就是保存代码的地方，也就是保存网站的地方。这里我们做一个最简单的网站：个人简历。</p>
+<p data-pid="k6Bxa0Ar">1，首先点击&ldquo;Your repositories&rdquo;，查看个人全部仓库，第一次肯定是空空如也啊。</p>
+<figure data-size="normal"><img data-actualsrc="https://pic3.zhimg.com/v2-f132244af4570e99ff40dc14727458fa_b.jpg" data-caption="" data-lazy-status="ok" data-original-token="v2-f132244af4570e99ff40dc14727458fa" data-rawheight="248" data-rawwidth="254" data-size="small" height="248" src="https://pic3.zhimg.com/80/v2-f132244af4570e99ff40dc14727458fa_1440w.webp" width="254" /></figure>
+<p data-pid="1oLPd0C6">2，接着我们新建一个仓库</p>
+<figure data-size="normal"><img data-actualsrc="https://pic1.zhimg.com/v2-328dfe93e5934c79ad8adcc6592a3644_b.jpg" data-caption="" data-lazy-status="ok" data-original="https://pic1.zhimg.com/v2-328dfe93e5934c79ad8adcc6592a3644_r.jpg" data-original-token="v2-328dfe93e5934c79ad8adcc6592a3644" data-rawheight="249" data-rawwidth="993" data-size="normal" height="249" src="https://pic1.zhimg.com/80/v2-328dfe93e5934c79ad8adcc6592a3644_1440w.webp" width="993" /></figure>
+<p data-pid="iGaVMDz3">3，这一步很重要，仓库的名字不可以随便写，必须是&nbsp;<b>&lt;我的名字&gt;.github.io</b></p>
+<p data-pid="1hFsfsvh">比如我注册的名字是 zhihu1，所以这里我创建的仓库的名字必须是 ：&nbsp;<a data-za-detail-view-id="1043" href="https://link.zhihu.com/?target=http%3A//zhihu1.github.io" rel="nofollow noreferrer" target="_blank">http://zhihu1.github.io</a></p>
+<figure data-size="normal"><img data-actualsrc="https://pic3.zhimg.com/v2-6a26d3e1d750f6653073df94cb4e028e_b.jpg" data-caption="" data-lazy-status="ok" data-original="https://pic3.zhimg.com/v2-6a26d3e1d750f6653073df94cb4e028e_r.jpg" data-original-token="v2-6a26d3e1d750f6653073df94cb4e028e" data-rawheight="563" data-rawwidth="850" data-size="normal" height="563" src="https://pic3.zhimg.com/80/v2-6a26d3e1d750f6653073df94cb4e028e_1440w.webp" width="850" /></figure>
+<p data-pid="nevuMhwN">4，接着下一步页面会比较复杂，你会看到一大堆看不懂的东西，其实那些事git操作提示。如果你熟练git的话就知道了。不过我们不管这些，我们只需要创建一个新的文件就行啦！</p>
+<figure data-size="normal"><img data-actualsrc="https://pic2.zhimg.com/v2-f4df4721d35a10396ee1ad81423e5839_b.jpg" data-caption="" data-lazy-status="ok" data-original="https://pic2.zhimg.com/v2-f4df4721d35a10396ee1ad81423e5839_r.jpg" data-original-token="v2-f4df4721d35a10396ee1ad81423e5839" data-rawheight="509" data-rawwidth="1080" data-size="normal" height="509" src="https://pic2.zhimg.com/80/v2-f4df4721d35a10396ee1ad81423e5839_1440w.webp" width="1080" /></figure>
+<p data-pid="maTlGMDU">5，新文件的名字不可以乱写哦，<b>必须是 index.html，</b>这里大家都一样都写这个。（题外话：静态http文件托管服务的默认访问文件就是index.html）</p>
+<figure data-size="normal"><img data-actualsrc="https://pic3.zhimg.com/v2-b4e6b1cf4e69526e1ef8abaa83874962_b.jpg" data-caption="" data-lazy-status="ok" data-original="https://pic3.zhimg.com/v2-b4e6b1cf4e69526e1ef8abaa83874962_r.jpg" data-original-token="v2-b4e6b1cf4e69526e1ef8abaa83874962" data-rawheight="688" data-rawwidth="1068" data-size="normal" height="688" src="https://pic3.zhimg.com/80/v2-b4e6b1cf4e69526e1ef8abaa83874962_1440w.webp" width="1068" /></figure>
+<p data-pid="-QBYZzo_">可以参考笔者的内容如下，改成你自己的介绍哦~</p>
+<pre>
+<code>&lt;p&gt;Hello 大家好&lt;/p&gt;
+&lt;p&gt;我是霸都丶傲天，这是我的个人网站。 &lt;/p&gt;
+&lt;p&gt;很高兴你来到这里, 你可以在以下的网站找到我&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt; &lt;a href=&quot;https://www.zhihu.com/people/AJLoveChina&quot;&gt;知乎&lt;/a&gt; &lt;/li&gt;
+  &lt;li&gt; &lt;a href=&quot;http://hejie.nigeerhuo.com&quot;&gt;我的博客(已经不更细了,现在在知乎写文章)&lt;/a&gt; &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+<h2>3.查看网站的网址</h2>
+<p data-pid="o8AGI780">到这里，我们一个最简单的个人网站的代码就完成了。接下来最重要的一步，我们需要知道网站的链接啊，只有这样，别人才能访问我们的网站呀。</p>
+<p data-pid="JeWGY343">1，点击settings</p>
+<figure data-size="normal"><img data-actualsrc="https://pic1.zhimg.com/v2-7e08bda1f87415454ba0e1944b4d48cc_b.jpg" data-caption="" data-lazy-status="ok" data-original="https://pic1.zhimg.com/v2-7e08bda1f87415454ba0e1944b4d48cc_r.jpg" data-original-token="v2-7e08bda1f87415454ba0e1944b4d48cc" data-rawheight="219" data-rawwidth="1037" data-size="normal" height="219" src="https://pic1.zhimg.com/80/v2-7e08bda1f87415454ba0e1944b4d48cc_1440w.webp" width="1037" /></figure>
+<p data-pid="tcQE7oSN">2，然后往下翻找到 Github Pages， 看到绿色提示，后面的链接就是你的网站地址了，打开看看吧~</p>
+<p data-pid="QKXl65Cv"><b>Tip：很多老铁评论说这里看不到绿色框框，没有URL。</b>那是因为你的仓库名称与用户名不一致，不过不用担心，也是有办法的，看下面的第二张图片。</p>
+<figure data-size="normal"><img data-actualsrc="https://pic3.zhimg.com/v2-e337c927f03d6b82754909948032e1de_b.jpg" data-lazy-status="ok" data-original="https://pic3.zhimg.com/v2-e337c927f03d6b82754909948032e1de_r.jpg" data-original-token="v2-e337c927f03d6b82754909948032e1de" data-rawheight="364" data-rawwidth="783" data-size="normal" height="364" src="https://pic3.zhimg.com/80/v2-e337c927f03d6b82754909948032e1de_1440w.webp" width="783" />
+<figcaption>第一张图片</figcaption></figure>
+<figure data-size="small"><img data-actualsrc="https://pic1.zhimg.com/v2-5853ec09142aa91a84e941324a9d75b8_b.jpg" data-lazy-status="ok" data-original="https://pic1.zhimg.com/v2-5853ec09142aa91a84e941324a9d75b8_r.jpg" data-original-token="v2-5853ec09142aa91a84e941324a9d75b8" data-rawheight="501" data-rawwidth="801" data-size="normal" height="501" src="https://pic1.zhimg.com/80/v2-5853ec09142aa91a84e941324a9d75b8_1440w.webp" width="801" />
+<figcaption>第二张图片(这里我设置成小图防止误导正常老铁, 点击可以放大图)</figcaption></figure>
+<p data-pid="RPnd6X75">3，点开网站看一下</p>
+<figure data-size="normal"><img data-actualsrc="https://pic2.zhimg.com/v2-909182d758382dcb2c99dc2c9ac7a3d5_b.jpg" data-caption="" data-lazy-status="ok" data-original-token="v2-909182d758382dcb2c99dc2c9ac7a3d5" data-rawheight="306" data-rawwidth="404" data-size="normal" height="306" src="https://pic2.zhimg.com/80/v2-909182d758382dcb2c99dc2c9ac7a3d5_1440w.webp" width="404" /></figure>
+<p data-pid="hco9Su5_">完成！</p>
+<p data-pid="9lEGi0Q5">其实细心的同学会发现，其实我们的网站地址和我们写的仓库名称是一样的，是滴！而且非常有个性的是我们的名字还出现在网站地址中。</p>
+<p data-pid="Fk0gZPNn">笔者的Github仓库&amp;&amp;网址：<a data-za-detail-view-id="1043" href="https://link.zhihu.com/?target=https%3A//github.com/zhihu1/zhihu1.github.io" rel="nofollow noreferrer" target="_blank">Git仓库地址</a>&nbsp;<a data-za-detail-view-id="1043" href="https://link.zhihu.com/?target=http%3A//zhihu1.github.io/" rel="nofollow noreferrer" target="_blank">http://zhihu1.github.io/</a></p>
+<hr />
+<p data-pid="C-Wo5ZQf">本来到这里这个教程已经结束了，但是我想有的同学肯定是不满意的。首先你的这个网站做的太简陋了吧，不是我想要的那种!</p>
+<p data-pid="HeYEYjZi">那好，其实学会这个教程就可以做下面两个非常炫酷的小站点了，一个是生日祝福，一个是爱情纪念日。都是很有意义、很温馨的题材哦：）</p><a data-draft-node="block" data-draft-type="link-card" data-image="https://pic1.zhimg.com/v2-f272a117290462261e2d42027c2d735c_180x120.jpg" data-image-height="568" data-image-width="1287" data-text="霸都丶傲天： 改改数据,为心爱的人做一个超具创意的网页生日祝福吧~" data-za-detail-view-id="172" href="https://zhuanlan.zhihu.com/p/85899661" target="_blank">霸都丶傲天： 改改数据,为心爱的人做一个超具创意的网页生日祝福吧~294 赞同 &middot; 109 评论文章<img alt="" src="https://pic1.zhimg.com/v2-f272a117290462261e2d42027c2d735c_180x120.jpg" /></a><br /><a data-draft-node="block" data-draft-type="link-card" data-image="https://pic3.zhimg.com/v2-99a4258cb88d3fa71e472a50796f6cda_180x120.jpg" data-image-height="514" data-image-width="910" data-text="霸都丶傲天：5分钟做一个免费的网页爱情树,快快学习发给自己的女朋友吧(微信QQ都可以查看哦)^_^" data-za-detail-view-id="172" href="https://zhuanlan.zhihu.com/p/72907840" target="_blank">霸都丶傲天：5分钟做一个免费的网页爱情树,快快学习发给自己的女朋友吧(微信QQ都可以查看哦)^_^66 赞同 &middot; 54 评论文章<img alt="" src="https://pic3.zhimg.com/v2-99a4258cb88d3fa71e472a50796f6cda_180x120.jpg" /></a><br /><a data-draft-node="block" data-draft-type="link-card" data-image="https://pic1.zhimg.com/v2-44df706ca8aaef120a9fd4733cdf07e4_180x120.jpg" data-image-height="475" data-image-width="1019" data-text="霸都丶傲天：告白气球？ 圣诞节的创意网页小礼物不了解一下么？" data-za-detail-view-id="172" href="https://zhuanlan.zhihu.com/p/99136480" target="_blank">霸都丶傲天：告白气球？ 圣诞节的创意网页小礼物不了解一下么？15 赞同 &middot; 8 评论文章<img alt="" src="https://pic1.zhimg.com/v2-44df706ca8aaef120a9fd4733cdf07e4_180x120.jpg" /></a>
+<p data-pid="ZqHyLP7r">而且你也不是一定要做个人网站呀，也可以做个下面这样的网页小游戏咿呀：）</p><a data-draft-node="block" data-draft-type="link-card" data-image="https://pic1.zhimg.com/v2-1fef8ba2ae41e6706c340ef04b0197bc_180x120.jpg" data-image-height="822" data-image-width="1920" data-text="霸都丶傲天： 大家手指按到屏幕上随机挑选一个shy shy的Ta, 随机决定是谁喝酒、取外卖、洗碗等等" data-za-detail-view-id="172" href="https://zhuanlan.zhihu.com/p/156056058" target="_blank">霸都丶傲天： 大家手指按到屏幕上随机挑选一个shy shy的Ta, 随机决定是谁喝酒、取外卖、洗碗等等10 赞同 &middot; 1 评论文章<img alt="" src="https://pic1.zhimg.com/v2-1fef8ba2ae41e6706c340ef04b0197bc_180x120.jpg" /></a>
+<p data-pid="f1abDepw">所以是这样子的，我没有演示复杂的网页是因为它需要写的代码太多了，许多第一次接触Github的老铁，或者以前从来没接触过HTML的人就会有点陌生。</p>
+<p data-pid="Gl5E5ONZ">是的，这里我们提到了HTML，它就是网页的描述语言，对HTML感兴趣我推荐这些最好的免费自学网站。</p>
+<ul>
+	<li data-pid="hWLI5cUP"><a data-za-detail-view-id="1043" href="https://link.zhihu.com/?target=https%3A//www.w3school.com.cn/html/index.asp" rel="nofollow noreferrer" target="_blank">国内的w3school</a>&nbsp;（国内的w3School这两年商业元素越来越浓厚了，不怎么推荐了）</li>
+	<li data-pid="81BmHIpf"><a data-za-detail-view-id="1043" href="https://link.zhihu.com/?target=https%3A//www.w3schools.com/html/" rel="nofollow noreferrer" target="_blank">国外的w3school</a>&nbsp;网络条件好，并且英语还不错的同学建议看国外的</li>
+	<li data-pid="omTeYwja">但是业界<b>最专业</b>的的自学网站应该是这个&nbsp;<a data-za-detail-view-id="1043" href="https://link.zhihu.com/?target=https%3A//developer.mozilla.org/en-US/docs/Web/HTML" rel="nofollow noreferrer" target="_blank">https://developer.mozilla.org/en-US/docs/Web/HTML</a>&nbsp;（Mozilla基金会出的mdn文档，绝对的大牛出品，质量把控）</li>
+</ul>
+<p>&nbsp;</p>
+<p data-pid="QP3HI1dD">后面一段时间，我还会出一些更高级的个人网站教程。所谓更高级不是说写一大堆代码，<b>而是如何使用业界非常流行的静态网站生成器来做个人网站。</b>静态网站生成器的英文说法叫做<b>&ldquo;static-site-generator&rdquo;。</b>我们只需要关注创作内容即可，这些工具可以帮助我们把网页做的非常绚丽，非常的awesome！</p>
+<p data-pid="t621IFnX">Github上面有专门的相关主题，并且非常火，这里我给个截图</p>
+<figure data-size="normal"><img data-actualsrc="https://pic4.zhimg.com/v2-7c1830fde392e02a98ea69847be34ffb_b.jpg" data-lazy-status="ok" data-original="https://pic4.zhimg.com/v2-7c1830fde392e02a98ea69847be34ffb_r.jpg" data-original-token="v2-7c1830fde392e02a98ea69847be34ffb" data-rawheight="287" data-rawwidth="680" data-size="normal" height="287" src="https://pic4.zhimg.com/80/v2-7c1830fde392e02a98ea69847be34ffb_1440w.webp" width="680" />
+<figcaption>Github上面有超过1500个静态网站生成工具</figcaption></figure>
+<blockquote data-pid="ai4qstC1">最后，这篇文章的初衷还是写给对编程知识不懂但是又感兴趣的老铁，以及刚上大学计算机系的后起新秀，做一个个人网站可以很大程度提高自己学习编程的动力，所以我觉得这是很有意义的一件事情。</blockquote>
+<hr />
+<p data-pid="4PznJfpE">感谢评论里的老铁各位的建议，有些老铁看了可能会疑惑，我来解答吧：</p>
+<ul>
+	<li data-pid="CQQ-bYJl">wordpress确实是业界做<b>博客类</b>网站，或者也叫内容型网站的首选。它适合不会编程但是又想做出很绚丽博客的人，它有很多模板可以选择，每一个模板就是一种风格样式。它不在本次文章的推荐中是因为，使用wordpress需要购买主机或者wordpress专用虚拟主机，是需要付费的。</li>
+	<li data-pid="OUKISxOM">@joey大佬提到了&ldquo;用七牛，阿里之类的对象存储服务做免费的cdn静态网站&rdquo;。<b>确实在目前来看它们是比Github Pages可能更优秀的选择。</b>但是它们有推销的嫌疑，所以我没有推荐这些，类似还有腾讯的COS对象存储，它们都有免费的额度，<b>大概是一个月免费15GB流量，最高免费10GB文件存储。</b>对于大部分人来说这些是足够的了。但是它的缺点也很明显，<b>未来可能需要付费以及需要自己购买域名</b>（当然你也可以使用它免费提供的域名，很长很难记！因为它看起来像这样子 Ukdalkdkl-china-shanghai-1。xxx。com ）</li>
+</ul>
+<p data-pid="ud0IId-4">当然如果对上面感兴趣的老铁也可以在评论里面说，我也可以出类似的文章说一下怎么做的，用起来都很方便。</p>
+<p data-pid="irOAZol_">最后的最后，有什么问题直接评论即可，拜拜┏(＾0＾)┛，楼主镇楼。</p>
+
+
+            <p class="post-info">
+                 本文由 
+                <a href="/">天下长安长乐未央</a>
+                 创作，采用 
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="external nofollow">知识共享署名4.0</a>
+                 国际许可协议进行许可。
+                <br>
+                本站文章除注明转载/出处外，均为本站原创或翻译，转载前请务必署名。 
+            </p>
+
+  <p class="post-info">
+      <br>上一篇：<a href='/article/31.html'>推荐几个仿站(爬站)工具</a></br>
+      <br>下一篇：<a href='/article/34.html'>永久虚拟主机地址汇总</a></br></p>
+   </p>
+
+
+        </div>
+    </article>
+
+
+    <div id="post-bottom-bar" class="post-bottom-bar">
+        <div class="bottom-bar-inner">
+            <div class="bottom-bar-items social-share left">
+                <span class="bottom-bar-item">Share : </span>
+                <span class="bottom-bar-item bottom-bar-facebook">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=//article/32.html" target="_blank" title="使用Github做一个完全免费的个人网站(步骤很细)" rel="nofollow">Facebook</a>
+                </span>
+                <span class="bottom-bar-item bottom-bar-twitter">
+                    <a href="https://twitter.com/intent/tweet?url=//article/32.html&text=使用Github做一个完全免费的个人网站(步骤很细)" target="_blank" title="使用Github做一个完全免费的个人网站(步骤很细)" rel="nofollow">Twitter</a>
+                </span>
+                <span class="bottom-bar-item bottom-bar-weibo">
+                    <a href="http://service.weibo.com/share/share.php?url=//article/32.html&amp;title=使用Github做一个完全免费的个人网站(步骤很细)" target="_blank" title="使用Github做一个完全免费的个人网站(步骤很细)" rel="nofollow">Weibo</a>
+                </span>
+                <span class="bottom-bar-item bottom-bar-qrcode">
+                    <a href="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=//article/32.html" target="_blank" rel="nofollow">QR code</a>
+                </span>
+            </div>
+            <div class="bottom-bar-items right">
+                <span class="bottom-bar-item"></span>
+                <span class="bottom-bar-item">
+                    <a href="//article/32.html" title="使用Github做一个完全免费的个人网站(步骤很细)">→</a>
+                </span>
+                <span class="bottom-bar-item">
+                    <a href="#footer">↓</a>
+                </span>
+                <span class="bottom-bar-item">
+                    <a href="#">↑</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="related-post-lists">
+        <div class="post-lists">
+            <div class="post-lists-body">
+
+
+
+
+
+
+
+                <div class="post-list-item">
+                    <div class="post-list-item-container">
+                        <div class="item-label">
+                            <div class="item-title">
+                                <a href="/article/54.html">potplayer怎么设置无边框</a>
+                            </div>
+                            <div class="item-meta clearfix">
+                                <div class="item-meta-ico bg-ico-image" style="background: url(/static/pingsu/images/bg-ico.png) no-repeat;background-size: 40px auto;"></div>
+                                <div class="item-meta-cat">
+
+   <a href="/list/Windows/" title="Windows">Windows</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-list-item">
+                    <div class="post-list-item-container">
+                        <div class="item-label">
+                            <div class="item-title">
+                                <a href="/article/53.html">Win 11系统安装提示:若要获取疑难</a>
+                            </div>
+                            <div class="item-meta clearfix">
+                                <div class="item-meta-ico bg-ico-image" style="background: url(/static/pingsu/images/bg-ico.png) no-repeat;background-size: 40px auto;"></div>
+                                <div class="item-meta-cat">
+
+   <a href="/list/Windows/" title="Windows">Windows</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-list-item">
+                    <div class="post-list-item-container">
+                        <div class="item-label">
+                            <div class="item-title">
+                                <a href="/article/50.html">帝国CMS实现独立附件服务器</a>
+                            </div>
+                            <div class="item-meta clearfix">
+                                <div class="item-meta-ico bg-ico-image" style="background: url(/static/pingsu/images/bg-ico.png) no-repeat;background-size: 40px auto;"></div>
+                                <div class="item-meta-cat">
+
+   <a href="/list/Web/" title="Web">Web</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+<!-- 暂时关闭
+    <div id="respond-post-32" class="comment-container">
+        <div id="comments" class="clearfix">
+            <span class="response">
+                Responses / You are 
+                <a href="http://10.0.0.5:9009/admin/profile.php" data-no-instant>天下长安长乐未央</a>
+                 here, do you want to 
+                <a href="http://10.0.0.5:9009/index.php/action/logout?_=7d531547ee4b0c407a0654bd375e3737" title="Logout" data-no-instant>logout</a>
+                 ? 
+                <a id="cancel-comment-reply-link" href="http://10.0.0.5:9009/index.php/Web/32.html#respond-post-32" rel="nofollow" style="display:none" onclick="return TypechoComment.cancelReply();"> / Cancel Reply</a>
+            </span>
+            <form method="post" action="http://10.0.0.5:9009/index.php/Web/32.html/comment" id="comment-form" class="comment-form" role="form" onsubmit="getElementById('misubmit').disabled=true;return true;">
+                <textarea name="text" id="textarea" class="form-control" placeholder="Your comment here. Be cool. " required></textarea>
+                <button type="submit" class="submit" id="misubmit">SUBMIT</button>
+                <input type="hidden" name="_" value="1b7ad8fdaa04237350aa8e0808dde5f8">
+            </form>
+        </div>
+    </div>
+-->
+
+<!-- 底部 -->
+
+
+  <footer id="footer" class="footer bg-white">
+        <div class="footer-social">
+            <div class="footer-container clearfix">
+                <div class="social-list">
+链接：
+  <a href="https://www.029-china.com.cn" title="旅游年票" target="_blank">旅游年票</a>
+  <a href="https://888268.xyz" title="天下长安" target="_blank">天下长安</a>
+  <a href="https://www.029-china.com.cn" title="陕西旅游年票" target="_blank">陕西旅游年票</a>
+  <a href="https://www.029-china.com.cn" title="西北旅游年票" target="_blank">西北旅游年票</a>
+  <a href="https://888268.xyz" title="天下长安长乐未央" target="_blank">天下长安长乐未央</a>
+  <a href="https://blog.888268.xyz" title="长乐未央" target="_blank">长乐未央</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-meta">
+            <div class="footer-container">
+                <div class="meta-item meta-copyright">
+                    <div class="meta-copyright-info">
+                        <a href="/" class="info-logo">
+                            <img src="/static/pingsu/images/crossplane-icon.svg" alt="天下长安长乐未央"/>
+                        </a>
+                        <div class="info-text">
+<script type="text/javascript" src="https://site.qb86.cn/hitokoto/api.php?format=js&charset=utf-8"></script><script>hitokoto()</script>
+                            
+                            <p>
+                                <a href="/" target="blank">萌ICP20000520</a>
+                            </p>
+                            <p>
+                                &copy; 2007-2023 
+                                <a href="/">天下长安长乐未央</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="meta-item meta-posts">
+                    <h3 class="meta-title">HOT POSTS</h3>
+<li><a href="/article/3.html" title="ESXi搭建 ALL IN ONE 服务器之双软路由篇">ESXi搭建 ALL IN ONE 服务器之双软</a></li><li><a href="/article/2.html" title="Memos 是一款开源的 flomo 替代工具">Memos 是一款开源的 flomo 替代工</a></li><li><a href="/article/6.html" title="群晖 思源笔记docker 部署 踩坑">群晖 思源笔记docker 部署 踩坑</a></li><li><a href="/article/20.html" title="常见博客程序">常见博客程序</a></li><li><a href="/article/46.html" title="帝国cms7.5模板友情链接SQL调用代码标签的调用方法">帝国cms7.5模板友情链接SQL调用代</a></li><li><a href="/article/45.html" title="帝国常用标签汇总">帝国常用标签汇总</a></li><li><a href="/article/7.html" title="帝国cms中常用标签（总结）">帝国cms中常用标签（总结）</a></li><li><a href="/article/1.html" title="AdGuard 设置">AdGuard 设置</a></li>
+
+                </div>
+                <div class="meta-item meta-tags">
+                    <h3 class="meta-title">RECENT POSTS</h3>
+
+<li><a href="/article/54.html" title="potplayer怎么设置无边框">potplayer怎么设置无边框</a></li><li><a href="/article/53.html" title="Win 11系统安装提示:若要获取疑难解答提示,请使用其他设备并访问aka.ms/networksetup">Win 11系统安装提示:若要获</a></li><li><a href="/article/50.html" title="帝国CMS实现独立附件服务器">帝国CMS实现独立附件服务器</a></li><li><a href="/article/49.html" title="JS记录并显示网页的最后修改时间">JS记录并显示网页的最后修</a></li><li><a href="/article/48.html" title="帝国cms内容页某个字段没有填写就不显示的解决方法">帝国cms内容页某个字段没有</a></li><li><a href="/article/47.html" title="帝国CMS教程：如果文章没有缩略图，随机调用自定义缩略图">帝国CMS教程：如果文章没有缩</a></li><li><a href="/article/46.html" title="帝国cms7.5模板友情链接SQL调用代码标签的调用方法">帝国cms7.5模板友情链接SQL</a></li><li><a href="/article/45.html" title="帝国常用标签汇总">帝国常用标签汇总</a></li>                </div>
+            </div>
+    </footer>
+
+
+
+    <div id="directory-content" class="directory-content">
+        <div id="directory"></div>
+    </div>
+    <script>
+    var postDirectoryBuild = function() {
+        var postChildren = function children(childNodes, reg) {
+                var result = [],
+                    isReg = typeof reg === 'object',
+                    isStr = typeof reg === 'string',
+                    node,
+                    i,
+                    len;
+                for (i = 0, len = childNodes.length; i < len; i++) {
+                    node = childNodes[i];
+                    if ((node.nodeType === 1 || node.nodeType === 9) && (!reg || isReg && reg.test(node.tagName.toLowerCase()) || isStr && node.tagName.toLowerCase() === reg)) {
+                        result.push(node);
+                    }
+                }
+                return result;
+            },
+            createPostDirectory = function(article, directory, isDirNum) {
+                var contentArr = [],
+                    titleId = [],
+                    levelArr,
+                    root,
+                    level,
+                    currentList,
+                    list,
+                    li,
+                    link,
+                    i,
+                    len;
+                levelArr = (function(article, contentArr, titleId) {
+                    var titleElem = postChildren(article.childNodes, /^hd$/),
+                        levelArr = [],
+                        lastNum = 1,
+                        lastRevNum = 1,
+                        count = 0,
+                        guid = 1,
+                        id = 'directory' + (Math.random() + '').replace(/D/, ''),
+                        lastRevNum,
+                        num,
+                        elem;
+                    while (titleElem.length) {
+                        elem = titleElem.shift();
+                        contentArr.push(elem.innerHTML);
+                        num = +elem.tagName.match(/d/)[0];
+                        if (num > lastNum) {
+                            levelArr.push(1);
+                            lastRevNum += 1;
+                        } else if (num === lastRevNum || num > lastRevNum && num <= lastNum) {
+                            levelArr.push(0);
+                            lastRevNum = lastRevNum;
+                        } else if (num < lastRevNum) {
+                            levelArr.push(num - lastRevNum);
+                            lastRevNum = num;
+                        }
+                        count += levelArr[levelArr.length - 1];
+                        lastNum = num;
+                        elem.id = elem.id || (id + guid++);
+                        titleId.push(elem.id);
+                    }
+                    if (count !== 0 && levelArr[0] === 1)
+                        levelArr[0] = 0;
+                    return levelArr;
+                })(article, contentArr, titleId);
+                currentList = root = document.createElement('ul');
+                dirNum = [0];
+                for (i = 0, len = levelArr.length; i < len; i++) {
+                    level = levelArr[i];
+                    if (level === 1) {
+                        list = document.createElement('ul');
+                        if (!currentList.lastElementChild) {
+                            currentList.appendChild(document.createElement('li'));
+                        }
+                        currentList.lastElementChild.appendChild(list);
+                        currentList = list;
+                        dirNum.push(0);
+                    } else if (level < 0) {
+                        level *= 2;
+                        while (level++) {
+                            if (level % 2)
+                                dirNum.pop();
+                            currentList = currentList.parentNode;
+                        }
+                    }
+                    dirNum[dirNum.length - 1]++;
+                    li = document.createElement('li');
+                    link = document.createElement('a');
+                    link.href = '#' + titleId[i];
+                    link.innerHTML = !isDirNum ? contentArr[i] : dirNum.join('.') + ' ' + contentArr[i];
+                    li.appendChild(link);
+                    currentList.appendChild(li);
+                }
+                directory.appendChild(root);
+            };
+        createPostDirectory(document.getElementById('post-content'), document.getElementById('directory'), true);
+    };
+    postDirectoryBuild();
+    </script>
+    <script>
+    (function() {
+        window.TypechoComment = {
+            dom: function(id) {
+                return document.getElementById(id);
+            },
+            create: function(tag, attr) {
+                var el = document.createElement(tag);
+                for (var key in attr) {
+                    el.setAttribute(key, attr[key]);
+                }
+                return el;
+            },
+            reply: function(cid, coid) {
+                var comment = this.dom(cid),
+                    parent = comment.parentNode,
+                    response = this.dom('respond-post-32'),
+                    input = this.dom('comment-parent'),
+                    form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
+                    textarea = response.getElementsByTagName('textarea')[0];
+                if (null == input) {
+                    input = this.create('input', {
+                        'type': 'hidden',
+                        'name': 'parent',
+                        'id': 'comment-parent'
+                    });
+                    form.appendChild(input);
+                }
+                input.setAttribute('value', coid);
+                if (null == this.dom('comment-form-place-holder')) {
+                    var holder = this.create('div', {
+                        'id': 'comment-form-place-holder'
+                    });
+                    response.parentNode.insertBefore(holder, response);
+                }
+                comment.appendChild(response);
+                this.dom('cancel-comment-reply-link').style.display = '';
+                if (null != textarea && 'text' == textarea.name) {
+                    textarea.focus();
+                }
+                return false;
+            },
+            cancelReply: function() {
+                var response = this.dom('respond-post-32'),
+                    holder = this.dom('comment-form-place-holder'),
+                    input = this.dom('comment-parent');
+                if (null != input) {
+                    input.parentNode.removeChild(input);
+                }
+                if (null == holder) {
+                    return true;
+                }
+                this.dom('cancel-comment-reply-link').style.display = 'none';
+                holder.parentNode.insertBefore(response, holder);
+                return false;
+            }
+        };
+    })();
+    </script>
+    <script src="//cdn.bootcss.com/headroom/0.9.1/headroom.min.js"></script>
+    <script src="//cdn.bootcss.com/highlight.js/9.10.0/highlight.min.js"></script>
+    <script>
+    var postDirectory = new Headroom(document.getElementById("directory-content"), {
+        tolerance: 0,
+        offset: 280,
+        classes: {
+            initial: "initial",
+            pinned: "pinned",
+            unpinned: "unpinned"
+        }
+    });
+    postDirectory.init();
+    var postSharer = new Headroom(document.getElementById("post-bottom-bar"), {
+        tolerance: 0,
+        offset: 70,
+        classes: {
+            initial: "animated",
+            pinned: "pinned",
+            unpinned: "unpinned"
+        }
+    });
+    postSharer.init();
+    var header = new Headroom(document.getElementById("header"), {
+        tolerance: 0,
+        offset: 70,
+        classes: {
+            initial: "animated",
+            pinned: "slideDown",
+            unpinned: "slideUp"
+        }
+    });
+    header.init();
+    hljs.initHighlightingOnLoad();
+    </script>
+
+<link href="/skin/SyntaxHighlighter/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/skin/SyntaxHighlighter/shCore.js"></script>
+<script type="text/javascript">
+ SyntaxHighlighter.all();
+</script>
+<script>
+var paras = document.getElementsByTagName("pre");
+for ( var i=0;i<paras.length;i++ ) {
+    paras[i].setAttribute("class","brush:php;toolbar:false");     
+}
+</script>
+</body>
+</html>
